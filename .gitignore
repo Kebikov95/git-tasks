@@ -1,4 +1,8 @@
 *.db
 *.log
+.idea
+.iml
+.class
 target/
 bin/
+out/
