@@ -1,7 +1,7 @@
 *.db
 *.log
+*.iml
 .idea
-.iml
 .class
 target/
 bin/
