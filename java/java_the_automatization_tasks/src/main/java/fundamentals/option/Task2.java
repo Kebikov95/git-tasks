@@ -13,9 +13,9 @@ public class Task2 {
         Matrix matrix = new Matrix(dimension, range);
         matrix.displayMatrix();
 
-        matrix.findIncreasingElements();                       // part 2
-        matrix.findSumBetweenFirstAndSecondPositiveElements(); // part 3
-        matrix.removeRowsAndColumnsInMaxValue();               // part 4
-        matrix.sortRowsOfColumnAscending();                    // part 1
+        matrix.findIncreasingElements();
+        matrix.findSumBetweenFirstAndSecondPositiveElements();
+        matrix.removeRowsAndColumnsInMaxValue();
+        matrix.sortRowsOfColumnAscending();
     }
 }

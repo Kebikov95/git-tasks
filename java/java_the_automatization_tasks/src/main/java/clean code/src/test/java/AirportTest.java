@@ -33,7 +33,6 @@ public class AirportTest {
 
     private static final PassengerPlane planeWithMaxPassengerCapacity = new PassengerPlane("Boeing-747", 980, 16100, 70500, 242);
 
-    // In the class MilitatyPlane was created method isTransportMilitaryPlane(List<MilitaryPlane> planes).
     @Test
     public void testGetTransportMilitaryPlanes() {
         Airport airport = new Airport(planes);
@@ -46,7 +45,6 @@ public class AirportTest {
         Assert.assertTrue(airport.getPassengerPlaneWithMaxPassengersCapacity().equals(planeWithMaxPassengerCapacity));
     }
 
-    // In the class Plane was created method isNextPlaneMaxLoadCapacityIsHigherThanCurrent(List<Plane> planes).
     @Test
     public void testGetPlaneMaxLoadCapacityIsHigherThanCurrent() {
         Airport airport = new Airport(planes);
@@ -54,14 +52,12 @@ public class AirportTest {
         Assert.assertTrue(isNextPlaneMaxLoadCapacityIsHigherThanCurrent(airport.getPlanes()));
     }
 
-    // In the class MilitaryPlane was created method isAtLeastOneBomber(List<MilitaryPlane> transportMilitaryPlanes).
     @Test
     public void testHasAtLeastOneBomberInMilitaryPlanes() {
         Airport airport = new Airport(planes);
         Assert.assertTrue(isAtLeastOneBomberInMilitaryPlanes(airport.getBomberMilitaryPlanes()));
     }
 
-    // In the class ExperimentalPlane was created method isUnclassifiedPlanes(List<ExperimentalPlane> planes).
     @Test
     public void testExperimentalPlanesHasClassificationLevelHigherThanUnclassified() {
         Airport airport = new Airport(planes);

@@ -8,7 +8,7 @@ public class ReturnMonth {
         System.out.println("Please, enter a value from 1 to 12 to get the name of the month:");
         int month = in.nextInt();
 
-        switch (month){
+        switch (month) {
             case 1:
                 System.out.println("January");
                 break;
@@ -45,7 +45,8 @@ public class ReturnMonth {
             case 12:
                 System.out.println("December");
                 break;
-            default: throw new Error("You entered an invalid value.");
+            default:
+                throw new Error("You entered an invalid value.");
         }
     }
 }

@@ -23,7 +23,6 @@ public class ExperimentalPlane extends Plane {
         this.classificationLevel = classificationLevel;
     }
 
-    // Method for test testExperimentalPlanesHasClassificationLevelHigherThanUnclassified().
     public boolean isUnclassifiedPlanes(List<ExperimentalPlane> planes) {
         boolean hasUnclassifiedPlanes = false;
         for (ExperimentalPlane experimentalPlane : planes) {

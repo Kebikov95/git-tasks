@@ -5,8 +5,6 @@ import collections.main.autopark.types.BrandType;
 import java.util.Objects;
 
 public abstract class Car {
-    // Fuel consumption is indicated as the consumption of liters of gasoline per 100 km.
-    // Cost is indicated as the quantity of dollars per unit.
     private BrandType brand;
     private String model;
     private double fuelConsumption;
@@ -49,7 +47,9 @@ public abstract class Car {
         return productionYear;
     }
 
-    public int getMaxSpeed() { return maxSpeed; }
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
 
     @Override
     public boolean equals(Object o) {

@@ -7,8 +7,6 @@ import java.time.ZoneId;
 import java.util.Date;
 import java.util.Locale;
 
-
-// A man class created to initialize human objects.
 public class Person {
     private String lastName;
     private String firstName;
@@ -53,7 +51,7 @@ public class Person {
         return dateFormat.format(this.dateOfBirth).toUpperCase();
     }
 
-    public Person(String lastName, String firstName, String patronymic){
+    public Person(String lastName, String firstName, String patronymic) {
         this.lastName = lastName;
         this.firstName = firstName;
         this.patronymic = patronymic;
@@ -64,7 +62,7 @@ public class Person {
         setDateOfBirth(strDate);
     }
 
-    public int getBornYear(){
+    public int getBornYear() {
         LocalDate localDate = this.dateOfBirth.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         return localDate.getYear();
     }

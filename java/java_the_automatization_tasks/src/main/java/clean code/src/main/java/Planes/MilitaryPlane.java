@@ -17,7 +17,6 @@ public class MilitaryPlane extends Plane {
         return type;
     }
 
-    // Method for test testGetTransportMilitaryPlanes().
     public boolean isTransportMilitaryPlane(List<MilitaryPlane> transportMilitaryPlanes) {
         boolean isMilitary = false;
         for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {
@@ -29,7 +28,6 @@ public class MilitaryPlane extends Plane {
         return isMilitary;
     }
 
-    // Method for test testHasAtLeastOneBomberInMilitaryPlanes().
     public void isAtLeastOneBomber(List<MilitaryPlane> transportMilitaryPlanes) {
         boolean hasAtLeastOneBomber = false;
         for (MilitaryPlane militaryPlane : transportMilitaryPlanes) {

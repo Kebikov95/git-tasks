@@ -1,6 +1,5 @@
 package classes;
 
-// A student class created to initialize a student object.
 public class Student {
     static int counter = 0;
     private long id;

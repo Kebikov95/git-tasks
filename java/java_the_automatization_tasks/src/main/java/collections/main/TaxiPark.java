@@ -10,24 +10,24 @@ public class TaxiPark {
         this.taxis = taxis;
     }
 
-    public double getCost(){
+    public double getCost() {
         double cost = 0;
-        for (Taxi taxi:taxis) {
+        for (Taxi taxi : taxis) {
             cost += taxi.getCost();
         }
         return cost;
     }
 
-    public List<Taxi> sortTaxiByFuelConsumption(){
+    public List<Taxi> sortTaxiByFuelConsumption() {
         taxis.sort(new TaxiFuelConsumption());
         return taxis;
     }
 
-    public List<Taxi> findTaxiBySpeedRange(int minSpeedRange, int maxSpeedRange){
+    public List<Taxi> findTaxiBySpeedRange(int minSpeedRange, int maxSpeedRange) {
         List<Taxi> findTaxisBySpeedRange = new ArrayList<>();
-        for (Taxi taxi:taxis) {
-            if(taxi.getMaxSpeed() > minSpeedRange &&
-               taxi.getMaxSpeed() < maxSpeedRange){
+        for (Taxi taxi : taxis) {
+            if (taxi.getMaxSpeed() > minSpeedRange &&
+                    taxi.getMaxSpeed() < maxSpeedRange) {
                 findTaxisBySpeedRange.add(taxi);
             }
         }

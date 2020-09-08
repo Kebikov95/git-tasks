@@ -9,7 +9,7 @@ public class ReturnRandomNumber {
         System.out.println("Please, enter the value of the number of random numbers:");
         int quantity = in.nextInt();
 
-        if(quantity <= 0){
+        if (quantity <= 0) {
             System.out.println("You entered an invalid value.");
         } else {
             int[] numbers = generateRandomNumbers(quantity);
@@ -18,7 +18,7 @@ public class ReturnRandomNumber {
                     "2) any number on a new line");
             int consoleValue = in.nextInt();
 
-            switch (consoleValue){
+            switch (consoleValue) {
                 case 1:
                     System.out.println("Output numbers: " + Arrays.toString(numbers));
                     break;
@@ -34,11 +34,11 @@ public class ReturnRandomNumber {
         }
     }
 
-    static int[] generateRandomNumbers(int quantity){
+    static int[] generateRandomNumbers(int quantity) {
         int[] randomArray = new int[quantity];
         for (int i = 0; i < randomArray.length; i++) {
             randomArray[i] = (int) (Math.random() * 100);
         }
-        return  randomArray;
+        return randomArray;
     }
 }

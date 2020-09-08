@@ -32,7 +32,7 @@ public class TaxiParkProgram {
             new Taxi(new Sedan(BrandType.AUDI, "A5", 7.4, 33500.4, 4, 2019, 273), "0123-AB-7", RideType.BUSINESS),
             new Taxi(new Limousine(BrandType.MERCEDES, "Mercedes-Maybach S600", 14.4, 73500.4, 4, 2015, 233), "0000-AB-7", RideType.VIP),
             new Taxi(new Limousine(BrandType.MERCEDES, "Mercedes-Maybach S600", 16.3, 78502.4, 4, 2016, 233), "7777-AB-7", RideType.VIP)
-            );
+    );
 
     public static void main(String[] args) {
         TaxiPark taxiPark = new TaxiPark(taxis);

@@ -32,7 +32,6 @@ abstract public class Plane {
         return this.maxLoadCapacity;
     }
 
-    // Method for test testGetPlaneMaxLoadCapacityIsHigherThanCurrent().
     public boolean isNextPlaneMaxLoadCapacityIsHigherThanCurrent(List<Plane> planes) {
         boolean nextPlaneMaxLoadCapacityIsHigherThanCurrent = true;
         for (int i = 0; i < planes.size() - 1; i++) {

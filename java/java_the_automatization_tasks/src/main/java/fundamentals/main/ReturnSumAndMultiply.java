@@ -17,7 +17,7 @@ public class ReturnSumAndMultiply {
         System.out.printf("The multiply of this array is %d.\n", arrayMultiply(array));
     }
 
-    static int arraySum(int[] array){
+    static int arraySum(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
@@ -25,7 +25,7 @@ public class ReturnSumAndMultiply {
         return sum;
     }
 
-    static int arrayMultiply(int[] array){
+    static int arrayMultiply(int[] array) {
         int mult = 1;
         for (int i = 0; i < array.length; i++) {
             mult *= array[i];
